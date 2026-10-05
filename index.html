@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gossip | Restaurant in Champahati, South 24 Parganas</title>
+<meta name="description" content="Explore The Gossip in Champahati for pizzas, burgers, pasta, Chinese, momos, continental dishes and more.">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="The Gossip | Restaurant in Champahati, South 24 Parganas">
+<meta property="og:description" content="Pizzas, burgers, pasta, Chinese, momos and more at The Gossip, Champahati.">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<!-- Structured data: sudhu verified info. Name/address/phone change korle ekhaneo update korun. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"The Gossip","telephone":"+918420805671",
+"address":{"@type":"PostalAddress","streetAddress":"J N Bose Road, Champahati, Sahebpur","addressLocality":"South 24 Parganas","addressRegion":"West Bengal","postalCode":"743613","addressCountry":"IN"}}
+</script>
+</head>
+<body>
+<div id="preloader" aria-hidden="true"><div class="pre-inner"><div id="preLogo"></div><div class="dots"><i></i><i></i><i></i></div></div></div>
+
+<header id="nav" class="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="brand" id="navLogo" aria-label="The Gossip home"></a>
+    <nav id="menuNav" class="links" aria-label="Main">
+      <a href="#menu">Menu</a><a href="#offers">Offers</a><a href="#about">About</a>
+      <a href="#reviews">Reviews</a><a href="#gallery">Gallery</a><a href="#find">Find us</a>
+      <div class="m-only mobile-logo" id="mobLogo"></div>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn ghost sm hide-m" data-call href="#">Call now</a>
+      <button class="btn sm cart-btn" id="openCart" aria-label="Open cart">Cart <span id="cartCount" class="count">0</span></button>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <h1 id="heroTitle">THE GOSSIP</h1>
+      <p class="hero-tag" id="heroTag"></p>
+      <p class="hero-sub" id="heroSub"></p>
+      <div class="cta-row">
+        <a href="#menu" class="btn">Explore menu</a>
+        <a href="#menu" class="btn light" id="heroOrder">Order now</a>
+        <a href="#" class="btn ghost-light" data-call>Call restaurant</a>
+      </div>
+    </div>
+    <div class="bubble" id="heroBubble" aria-label="Rating and hours"></div>
+  </div>
+</section>
+
+<section class="sec intro wrap reveal">
+  <div class="intro-grid" id="pitch"></div>
+</section>
+
+<section class="sec wrap reveal" id="categories">
+  <div class="sec-head"><h2>What are you craving?</h2><p>Tap a category to jump straight to the menu.</p></div>
+  <div class="cat-grid" id="catGrid"></div>
+</section>
+
+<section class="sec dark reveal" id="popular">
+  <div class="wrap">
+    <div class="sec-head"><h2>Customer favourites</h2><p>The dishes people ask for first.</p></div>
+    <div class="grid" id="popularGrid"></div>
+  </div>
+</section>
+
+<section class="sec wrap" id="menu">
+  <div class="sec-head"><h2>Our menu</h2><p>Demo menu — prices and items can be updated before launch.</p></div>
+  <div class="tools">
+    <label class="search"><span class="sr">Search menu</span><input id="q" type="search" placeholder="Search pizza, momos, burger…"></label>
+    <select id="fType" aria-label="Veg or non-veg"><option value="all">Veg &amp; Non-Veg</option><option value="veg">Veg only</option><option value="nonveg">Non-Veg only</option></select>
+    <select id="fSort" aria-label="Sort"><option value="default">Sort: Recommended</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="az">Name: A–Z</option></select>
+    <button class="chip toggle" id="fPop" aria-pressed="false">★ Popular</button>
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="Menu categories"></div>
+  <p class="count-line" id="resCount" aria-live="polite"></p>
+  <div class="grid" id="menuGrid"></div>
+</section>
+
+<section class="sec soft reveal" id="offers">
+  <div class="wrap">
+    <div class="sec-head"><h2>Special offers</h2><p>Demo combos — replace with your real offers.</p></div>
+    <div class="offer-grid" id="offerGrid"></div>
+  </div>
+</section>
+
+<section class="sec wrap about reveal" id="about">
+  <div class="about-img" id="aboutImg"></div>
+  <div><h2 id="aboutTitle"></h2><p id="aboutText"></p>
+    <div class="why" id="why"></div></div>
+</section>
+
+<section class="sec dark reveal" id="reviews">
+  <div class="wrap">
+    <div class="sec-head"><h2>What guests say</h2><p>Sample reviews for the demo — to be replaced with genuine customer reviews.</p></div>
+    <div class="rev-grid" id="revGrid"></div>
+  </div>
+</section>
+
+<section class="sec wrap reveal" id="gallery">
+  <div class="sec-head"><h2>Restaurant gallery</h2></div>
+  <div class="gal" id="galGrid"></div>
+</section>
+
+<section class="sec soft reveal" id="find">
+  <div class="wrap find">
+    <div>
+      <h2>Find us</h2>
+      <address id="addr"></address>
+      <div class="cta-row">
+        <a class="btn" id="dirBtn" target="_blank" rel="noopener" href="#">Get directions</a>
+        <a class="btn ghost" data-call href="#">Call now</a>
+        <a class="btn wa" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <h3>Opening hours</h3>
+      <ul class="hours" id="hours"></ul>
+      <h3>Contact</h3>
+      <p id="contact"></p>
+    </div>
+    <div class="map"><iframe id="mapFrame" title="Map of The Gossip" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+<section class="sec wa-cta reveal">
+  <div class="wrap">
+    <h2>Hungry already?</h2>
+    <p>Send your order on WhatsApp — we'll take it from there.</p>
+    <a class="btn light" data-wa href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <div><div id="footLogo"></div><p id="footTag"></p></div>
+    <div><strong>Visit</strong><p id="footAddr"></p></div>
+    <div><strong>Connect</strong><p><a data-call href="#" id="footPhone"></a></p><div class="social" id="social"></div></div>
+  </div>
+  <div class="wrap copy"><span id="copy"></span><span class="demo-tag">Website Demo Concept</span></div>
+</footer>
+
+<!-- Mobile sticky CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#menu" class="btn sm">Order now</a>
+  <a href="#" class="btn sm ghost" data-call>Call</a>
+  <a href="#" class="btn sm wa" data-wa target="_blank" rel="noopener">WhatsApp</a>
+</div>
+<button id="toTop" class="to-top" aria-label="Scroll to top">↑</button>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- Cart drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Your cart" aria-hidden="true">
+  <div class="drawer-head"><h2>Your cart</h2><button class="x" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot" id="cartFoot"></div>
+</aside>
+
+<dialog id="itemDlg" class="dlg"></dialog>
+<dialog id="checkoutDlg" class="dlg wide"></dialog>
+<dialog id="lightDlg" class="dlg light-dlg"></dialog>
+
+<script src="js/restaurantData.js"></script>
+<script src="js/menuData.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
